@@ -1,0 +1,60 @@
+router0
+
+
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#network 18.0.0.2
+Router(config-router)#network 18.0.0.0
+Router(config-router)#network 16.0.0.0
+Router(config-router)#network 14.0.0.0
+Router(config-router)#network 12.0.0.0
+Router(config-router)#passive network 12.0.0.0
+                              ^
+% Invalid input detected at '^' marker.
+	
+Router(config-router)#passive interface 12.0.0.0
+                              ^
+% Invalid input detected at '^' marker.
+	
+Router(config-router)#passive_interface 12.0.0.0
+                             ^
+% Invalid input detected at '^' marker.
+	
+Router(config-router)#passive interface 12.0.0.0
+                              ^
+% Invalid input detected at '^' marker.
+	
+Router(config-router)#passive-interface 12.0.0.0
+                                        ^
+% Invalid input detected at '^' marker.
+	
+Router(config-router)#passive-interface fa0/0
+Router(config-router)#passive interface 12.0.0.0
+
+router01
+
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#network 10.0.0.0
+Router(config-router)#network 17.0.0.0
+Router(config-router)#network 16.0.0.0
+Router(config-router)#network 15.0.0.0
+Router(config-router)#passive-interface 10.0.0.0
+
+routeur 03
+
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#network 13.0.0.0
+Router(config-router)#passive-interface fa0/0
+
+
+router 00
+
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#network 12.0.0.0
+Router(config-router)#network 18.0.0.0
+Router(config-router)#network 16.0.0.0
+Router(config-router)#network 14.0.0.0
+Router(config-router)#passive-interface fa0/0
